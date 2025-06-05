@@ -65,4 +65,3 @@ To document technical choices and provide an overview of reasoning behind them, 
 
 - [Product landing page](https://www.workflowbuilder.io/)
 - [Publicly available web app](https://app.workflowbuilder.io/)
-- [Confluence space with more information](https://synergiapro.atlassian.net/wiki/spaces/WB/overview)

@@ -1,8 +1,14 @@
 import useStore from '@/store/store';
-import { NodeDefinition } from '@workflow-builder/types/node-data';
-import { NodeSchema } from '@workflow-builder/types/node-schema';
 import { useTranslateIfPossible } from '@/hooks/use-translate-if-possible';
 import { WorkflowNodeTemplate } from '../diagram/nodes/workflow-node-template/workflow-node-template';
+import { PaletteItem } from '@workflow-builder/types/common';
+import { NodeType } from '@workflow-builder/types/node-types';
+import { AiAgentNodeTemplate } from '../diagram/nodes/ai-agent-node-template/ai-agent-node-template';
+
+const NODE_TEMPLATES = {
+  [NodeType.Node]: WorkflowNodeTemplate,
+  [NodeType.AiNode]: AiAgentNodeTemplate,
+} as const;
 
 type NodePreviewContainerProps = {
   type: string;
@@ -20,18 +26,18 @@ export function NodePreviewContainer({ type }: NodePreviewContainerProps) {
 }
 
 type NodePreviewProps = {
-  nodeDefinition: NodeDefinition<NodeSchema>;
+  nodeDefinition: PaletteItem;
 };
 
 function NodePreview({ nodeDefinition }: NodePreviewProps) {
-  const { icon, label, description } = nodeDefinition;
+  const { icon, label, description, templateType = NodeType.Node } = nodeDefinition;
 
   const translateIfPossible = useTranslateIfPossible();
 
   const nodeLabel = translateIfPossible(label) || label;
   const nodeDescription = translateIfPossible(description) || description;
 
-  return (
-    <WorkflowNodeTemplate icon={icon} label={nodeLabel} description={nodeDescription} showHandles={false} id={''} />
-  );
+  const TemplateComponent = NODE_TEMPLATES[templateType];
+
+  return <TemplateComponent icon={icon} label={nodeLabel} description={nodeDescription} showHandles={false} id={''} />;
 }

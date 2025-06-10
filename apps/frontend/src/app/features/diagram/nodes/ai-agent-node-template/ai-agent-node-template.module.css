@@ -1,0 +1,53 @@
+.header {
+  align-items: center;
+  position: relative;
+
+  div:has(span) {
+    width: 100%;
+  }
+
+  :global(.react-flow__handle-right) {
+    right: calc(-1 * var(--ax-public-node-padding));
+  }
+
+  :global(.react-flow__handle-left) {
+    left: calc(-1 * var(--ax-public-node-padding));
+  }
+
+  .icon {
+    background: linear-gradient(158deg, #5360f9 8.25%, #852bec 91.09%), #151516;
+
+    & svg path {
+      stroke: white;
+    }
+  }
+}
+
+.content {
+  overflow: hidden;
+  transition: height 0.15s ease-in-out;
+
+  & > div {
+    padding-top: 0.5rem;
+    gap: 0.5rem;
+    flex-direction: column;
+    display: flex;
+  }
+
+  & svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .selected-model-icon {
+    background-color: var(--ax-txt-primary-default);
+    color: var(--ax-txt-primary-inverse);
+    outline: none;
+  }
+
+  .selected-memory-icon {
+    color: var(--wb-txt-primary-white);
+    background-color: var(--ax-button-gray-bg-default);
+    outline: none;
+  }
+}

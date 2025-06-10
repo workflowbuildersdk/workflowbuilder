@@ -11,6 +11,7 @@ import {
   TextAreaControlElement,
   DynamicConditionsControlElement,
   TextControlElement,
+  AiToolsControlElement,
 } from './controls';
 import { LabelElement } from './label';
 
@@ -21,7 +22,8 @@ export type UISchemaControlElement<T extends string = string> = (
   | DatePickerControlElement
   | TextAreaControlElement
   | DynamicConditionsControlElement
-) & { scope: T };
+  | AiToolsControlElement
+) & { scope: T; errorIndicatorEnabled?: boolean };
 export type UISchemaControlElementType = UISchemaControlElement['type'];
 
 type UISchemaLayoutElement =

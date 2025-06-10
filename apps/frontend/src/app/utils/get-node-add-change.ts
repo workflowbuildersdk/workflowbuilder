@@ -3,6 +3,7 @@ import { NodeAddChange, XYPosition } from '@xyflow/react';
 import { NodeType } from '@workflow-builder/types/node-types';
 
 export function getNodeAddChange(
+  templateType: NodeType,
   position: XYPosition | undefined,
   data: NodeData,
   id: string,
@@ -12,7 +13,7 @@ export function getNodeAddChange(
       type: 'add',
       item: {
         id,
-        type: NodeType.Node,
+        type: templateType,
         position: position ?? { x: 0, y: 0 },
         data: {
           segments: [],

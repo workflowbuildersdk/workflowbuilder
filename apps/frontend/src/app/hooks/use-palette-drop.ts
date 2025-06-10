@@ -6,6 +6,8 @@ import { DraggingItem } from '@workflow-builder/types/common';
 import { getNodeAddChange } from '@/utils/get-node-add-change';
 import { dataFormat } from '@/utils/consts';
 import { useTranslateIfPossible } from './use-translate-if-possible';
+import { NodeType } from '../../../../types/src/node-types';
+import { BaseNodeProperties } from '../../../../types/src/node-schema';
 
 export function usePaletteDrop() {
   const resetSelectedElements = useStoreApi().getState().resetSelectedElements;
@@ -22,15 +24,14 @@ export function usePaletteDrop() {
         return;
       }
 
-      const { defaultPropertiesData, type, icon } = nodeDefinition;
+      const { defaultPropertiesData, type, icon, templateType = NodeType.Node } = nodeDefinition;
+      const defaultProps = defaultPropertiesData as BaseNodeProperties;
 
       const label =
-        translateIfPossible(defaultPropertiesData.label) ||
-        translateIfPossible(nodeDefinition.label) ||
-        nodeDefinition.label;
+        translateIfPossible(defaultProps.label) || translateIfPossible(nodeDefinition.label) || nodeDefinition.label;
 
       const description =
-        translateIfPossible(defaultPropertiesData.description) ||
+        translateIfPossible(defaultProps.description) ||
         translateIfPossible(nodeDefinition.description) ||
         nodeDefinition.description;
 
@@ -42,7 +43,7 @@ export function usePaletteDrop() {
 
       const newNodeId = crypto.randomUUID();
       resetSelectedElements();
-      onNodesChange(getNodeAddChange(position, data, newNodeId));
+      onNodesChange(getNodeAddChange(templateType, position, data, newNodeId));
     },
     [getNodeDefinition, translateIfPossible, resetSelectedElements, onNodesChange],
   );

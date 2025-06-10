@@ -8,7 +8,7 @@ import {
 
 export type PrimitiveFieldType = 'string' | 'number' | 'boolean';
 
-type ItemOption = {
+export type ItemOption = {
   label: string;
   value: string;
   icon?: IconType;

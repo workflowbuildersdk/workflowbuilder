@@ -5,6 +5,8 @@ import { InputProps, TextAreaProps } from '@synergycodes/axiom';
 import { FieldSchema } from 'apps/types/src/node-schema';
 import { UISchemaRule } from './rules';
 import { ComparisonOperator, LogicalOperator } from '../utils/conditional-transform';
+import { NodeDataProperties } from '@/features/json-form/types/default-properties';
+import { AiAgentNodeSchema } from '../../../data/nodes/ai-agent/schema';
 
 type ControlProps<D, T extends UISchemaControlElement> = Override<
   BaseControlProps,
@@ -78,5 +80,15 @@ export type BaseControlProps = Override<
     uischema: UISchemaControlElement;
   }
 >;
+
+export type AiAgentTool = NonNullable<NodeDataProperties<AiAgentNodeSchema>['tools']>[number];
+
+export type AiToolsControlElement = Override<
+  BaseControlElement,
+  {
+    type: 'AiTools';
+  }
+>;
+export type AiToolsControlProps = ControlProps<AiAgentTool[], AiToolsControlElement>;
 
 type BaseControlElement = Override<ControlElement, { rule?: UISchemaRule }>;

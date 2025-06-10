@@ -1,7 +1,7 @@
-import { DefaultProperties } from '@/features/json-form/types/default-properties';
+import { NodeDataProperties } from '@/features/json-form/types/default-properties';
 import { NotificationNodeSchema } from './schema';
 
-export const defaultPropertiesData: DefaultProperties<NotificationNodeSchema> = {
+export const defaultPropertiesData: NodeDataProperties<NotificationNodeSchema> = {
   label: 'node.notification.label',
   description: 'node.notification.description',
   status: 'active',

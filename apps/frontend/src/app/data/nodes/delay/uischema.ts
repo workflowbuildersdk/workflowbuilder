@@ -45,6 +45,7 @@ const fixedDelayProperties: PaletteItem<DelayNodeSchema>['uischema'] = {
             {
               type: 'Text',
               scope: scope('properties.duration.properties.delayAmount'),
+              errorIndicatorEnabled: false,
             },
           ],
         },

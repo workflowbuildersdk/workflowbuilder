@@ -72,7 +72,7 @@ export async function getLayoutedNodes(
       return {
         id: node.id,
         width: node.width ?? 250,
-        height: node.height ?? 50,
+        height: document.querySelector(`[data-id="${node.id}"]`)?.getBoundingClientRect().height ?? 50,
         properties: {
           'org.eclipse.elk.portConstraints': 'FIXED_ORDER',
         },

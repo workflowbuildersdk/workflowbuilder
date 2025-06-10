@@ -1,5 +1,6 @@
 import { FormControlWithLabel } from '@/components/form/form-control-with-label/form-control-with-label';
 import { BaseControlProps } from '../types/controls';
+import { IndicatorDot } from '../components/indicator-dot/indicator-dot';
 
 type Props = BaseControlProps & {
   children: React.ReactNode;
@@ -7,22 +8,24 @@ type Props = BaseControlProps & {
 
 export function ControlWrapper({ children, uischema, errors, ...props }: Props) {
   const { required, visible } = props;
-  const { label } = uischema;
+  const { label, errorIndicatorEnabled = true } = uischema;
 
   if (!visible) {
     return;
   }
 
-  const hasErrors = errors.length > 0;
+  const hasLabel = typeof label === 'string';
+  const showIndicatorDot = errors.length > 0 && errorIndicatorEnabled;
+  const childrenControl = showIndicatorDot ? <IndicatorDot>{children}</IndicatorDot> : children;
 
   return (
     <>
-      {typeof label === 'string' ? (
-        <FormControlWithLabel label={label} required={required} hasErrors={hasErrors}>
-          {children}
+      {hasLabel ? (
+        <FormControlWithLabel label={label} required={required}>
+          {childrenControl}
         </FormControlWithLabel>
       ) : (
-        children
+        <>{childrenControl}</>
       )}
     </>
   );

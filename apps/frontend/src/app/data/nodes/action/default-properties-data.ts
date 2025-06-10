@@ -1,7 +1,7 @@
-import { DefaultProperties } from '@/features/json-form/types/default-properties';
+import { NodeDataProperties } from '@/features/json-form/types/default-properties';
 import { ActionNodeSchema } from './schema';
 
-export const defaultPropertiesData: DefaultProperties<ActionNodeSchema> = {
+export const defaultPropertiesData: NodeDataProperties<ActionNodeSchema> = {
   label: 'node.action.label',
   description: 'node.action.description',
   status: 'active',

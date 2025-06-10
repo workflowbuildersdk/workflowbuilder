@@ -46,6 +46,8 @@ export function useDiagramSlice(set: SetDiagramState, get: GetDiagramState) {
             ...connection,
             sourceHandle: getAttachedHandle(connection.sourceHandle),
             targetHandle: getAttachedHandle(connection.targetHandle),
+            //TODO: Temp solution
+            zIndex: connection.sourceHandle?.includes('tool') ? 1001 : undefined,
             type: 'labelEdge',
           },
           get().edges,

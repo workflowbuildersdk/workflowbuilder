@@ -8,7 +8,7 @@ import {
   useRef,
   useState,
 } from 'react';
-import { IconLabelButton } from '@synergycodes/axiom';
+import { Button } from '@synergycodes/axiom';
 import { Icon } from '@workflow-builder/icons';
 import { DynamicCondition } from '@/features/json-form/types/controls';
 import { ModalContext } from '@/features/modals/modal-provider';
@@ -100,10 +100,9 @@ export const ConditionsForm = forwardRef<ConditionsFormHandle, ConditionsFormPro
             />
           ))}
         </div>
-        <IconLabelButton className={styles['add-button']} variant="secondary" onClick={addCondition}>
+        <Button className={styles['add-button']} size="small" variant="secondary" onClick={addCondition}>
           <Icon name="PlusCircle" />
-          {''}
-        </IconLabelButton>
+        </Button>
       </form>
     );
   },

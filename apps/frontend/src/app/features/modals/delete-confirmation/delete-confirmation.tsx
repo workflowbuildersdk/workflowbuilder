@@ -1,8 +1,7 @@
 import { Node, Edge } from '@xyflow/react';
 import styles from './delete-confirmation.module.css';
-import clsx from 'clsx';
 import { Trans, useTranslation } from 'react-i18next';
-import { Checkbox, LabelButton } from '@synergycodes/axiom';
+import { Checkbox, Button } from '@synergycodes/axiom';
 import { useState } from 'react';
 
 type DeleteConfirmationProps = {
@@ -31,16 +30,16 @@ export function DeleteConfirmation({ nodes, edges, onShouldShowAgainChange }: De
 
   return (
     <div className={styles['content']}>
-      <span className={clsx('ax-public-p9', styles['text'])}>
+      <span>
         <Trans
           i18nKey="deleteConfirmation.text"
           values={{ selected: selectedText, parts: translatedParts }}
           components={{ b: <b /> }}
-        />{' '}
+        />
       </span>
       <div className={styles['checkbox-wrapper']}>
-        <Checkbox size="small" checked={isChecked} onChange={handleChange} />
-        <span>{t('deleteConfirmation.dontShowMeThisAgain')}</span>
+        <Checkbox id="dont-show-again-checkbox" size="small" checked={isChecked} onChange={handleChange} />
+        <label htmlFor="dont-show-again-checkbox">{t('deleteConfirmation.dontShowMeThisAgain')}</label>
       </div>
     </div>
   );
@@ -56,14 +55,12 @@ export function DeleteConfirmationButtons({ onDeleteClick, onCancelClick }: Dele
 
   return (
     <div className={styles['buttons']}>
-      <LabelButton variant="secondary" onClick={onCancelClick} label={t('deleteConfirmation.cancel')} />
-      <LabelButton
-        onClick={onDeleteClick}
-        label={t('deleteConfirmation.delete')}
-        size="medium"
-        variant="error"
-        autoFocus
-      />
+      <Button variant="secondary" onClick={onCancelClick}>
+        {t('deleteConfirmation.cancel')}
+      </Button>
+      <Button onClick={onDeleteClick} size="medium" variant="error" autoFocus>
+        {t('deleteConfirmation.delete')}
+      </Button>
     </div>
   );
 }

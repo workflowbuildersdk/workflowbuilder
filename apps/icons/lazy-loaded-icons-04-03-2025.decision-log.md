@@ -1,4 +1,4 @@
-# Lazy-loaded Icons
+### Title: Lazy-loaded Icons
 
 ### Proposed by: Jan Librowski
 

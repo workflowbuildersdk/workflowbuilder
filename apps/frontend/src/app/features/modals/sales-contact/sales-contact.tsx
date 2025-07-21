@@ -1,6 +1,6 @@
 import styles from './sales-contact.module.css';
 import imageUrl from '@/assets/ruslana.jpeg';
-import { Avatar, IconLabelButton } from '@synergycodes/axiom';
+import { Avatar, Button } from '@synergycodes/axiom';
 import clsx from 'clsx';
 import { LinkedinLogo, PaperPlaneRight } from '@phosphor-icons/react';
 
@@ -32,14 +32,14 @@ export function SalesContact() {
         </div>
       </div>
       <div className={styles['buttons']}>
-        <IconLabelButton size="medium" variant="secondary" onClick={handleLinkedInClick}>
+        <Button size="medium" variant="secondary" onClick={handleLinkedInClick}>
           <LinkedinLogo />
           LinkedIn
-        </IconLabelButton>
-        <IconLabelButton size="medium" variant="secondary" onClick={handleEmailClick}>
+        </Button>
+        <Button size="medium" variant="secondary" onClick={handleEmailClick}>
           <PaperPlaneRight />
           Email
-        </IconLabelButton>
+        </Button>
       </div>
     </div>
   );

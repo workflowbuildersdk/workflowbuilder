@@ -7,9 +7,9 @@ import { pl } from './locales/pl';
 import '@/features/plugins/i18n';
 import { withOptionalPluginsTranslation } from '@/features/plugins/utils/adapter-i18n';
 
-export const defaultNS = 'translation';
+const defaultNS = 'translation';
 
-export const resources = {
+const resources = {
   en: {
     translation: en,
   } as const,
@@ -35,5 +35,3 @@ i18n
       caches: ['localStorage'],
     },
   });
-
-export { default } from 'i18next';

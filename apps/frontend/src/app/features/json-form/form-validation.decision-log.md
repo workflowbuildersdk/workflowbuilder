@@ -1,4 +1,4 @@
-### Title: **JSON Form Validation Strategy**
+### Title: JSON Form Validation Strategy
 
 ### Proposed by: Piotr Błaszczyk
 

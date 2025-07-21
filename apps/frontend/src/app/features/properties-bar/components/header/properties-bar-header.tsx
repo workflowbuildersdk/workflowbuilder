@@ -1,5 +1,6 @@
-import { NavButton } from '@synergycodes/axiom';
 import styles from './properties-bar-header.module.css';
+
+import { NavButton } from '@synergycodes/axiom';
 import { Icon } from '@workflow-builder/icons';
 
 type Props = {
@@ -16,7 +17,9 @@ export function PropertiesBarHeader({ isExpanded, header, name, onDotsClick }: P
         <span className={name ? 'ax-public-h9' : 'ax-public-h7'}>{header}</span>
         {isExpanded && <p className="ax-public-p11">{name}</p>}
       </div>
-      <NavButton size="small" onClick={onDotsClick} icon={<Icon name="DotsThreeVertical" />} />
+      <NavButton size="small" onClick={onDotsClick}>
+        <Icon name="DotsThreeVertical" />
+      </NavButton>
     </div>
   );
 }

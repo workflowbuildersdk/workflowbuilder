@@ -11,12 +11,20 @@ import { MousePositionProvider } from './providers/mouse-position-provider';
 import { DiagramWrapper } from './features/diagram/diagram-wrapper';
 import { SnackbarContainer } from './features/snackbar/snackbar-container';
 import { ModalProvider } from './features/modals/modal-provider';
-
-import '@/features/plugins/index';
 import { useDetectLanguageChange } from './i18n/use-detect-language-change';
+import { setAutoFreeze } from 'immer';
+
+import './i18n/index';
+
+// Plugins entry point
+import '@/features/plugins/index';
 
 export function App() {
   useDetectLanguageChange();
+
+  // Disable immer's automatic object freezing because ReactFlow mutates objects under the hood
+  // and requires this to be turned off to function properly, especially when node size is updated
+  setAutoFreeze(false);
 
   return (
     <ReactFlowProvider>

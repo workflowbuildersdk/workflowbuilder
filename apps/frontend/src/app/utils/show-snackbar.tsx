@@ -1,12 +1,12 @@
 import { closeSnackbar, enqueueSnackbar } from 'notistack';
-import i18n from '@/i18n';
+import i18n from 'i18next';
 import { Snackbar, SnackbarProps } from '@synergycodes/axiom';
-import type { en } from '@/i18n/locales/en';
+import { DefaultTranslationMap } from '@/i18n/i18next';
 
 const AUTO_HIDE_DURATION_TIME = 3000;
 
 const SNACKBAR_PREFIX = `snackbar` as const;
-type SnackbarKey = keyof (typeof en)[typeof SNACKBAR_PREFIX];
+type SnackbarKey = keyof DefaultTranslationMap[typeof SNACKBAR_PREFIX];
 
 type ShowSnackbarProps = Omit<SnackbarProps, 'title'> & {
   title: SnackbarKey;

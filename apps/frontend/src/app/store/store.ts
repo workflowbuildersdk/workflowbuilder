@@ -5,9 +5,9 @@ import {
   useDiagramDataModificationSlice,
 } from './slices/diagram-data-modification/diagram-data-modification-slice';
 import {
-  DiagramDataPersistanceState,
-  useDiagramDataPersistanceSlice,
-} from './slices/diagram-data-persistance/diagram-data-persistance-slice';
+  DiagramDataPersistenceState,
+  useDiagramDataPersistenceSlice,
+} from './slices/diagram-data-persistence/diagram-data-persistence-slice';
 import { PaletteState, usePaletteSlice } from './slices/palette/palette-slice';
 import { DiagramSelectionState, useDiagramSelectionSlice } from './slices/diagram-selection/diagram-selection-slice';
 import { DiagramState, useDiagramSlice } from './slices/diagram-slice';
@@ -19,7 +19,7 @@ import { UserPreferencesState, useUserPreferencesSlice } from './slices/user-pre
 export type WorkflowEditorState = DiagramState &
   PaletteState &
   DiagramSelectionState &
-  DiagramDataPersistanceState &
+  DiagramDataPersistenceState &
   DiagramDataModificationState &
   UserPreferencesState;
 
@@ -36,7 +36,7 @@ export type GetDiagramState = () => WorkflowEditorState;
 const store: StateCreator<WorkflowEditorState> = withInterceptingMiddleware((set, get) => ({
   ...useDiagramSlice(set, get),
   ...useDiagramDataModificationSlice(set, get),
-  ...useDiagramDataPersistanceSlice(set, get),
+  ...useDiagramDataPersistenceSlice(set, get),
   ...useDiagramSelectionSlice(set, get),
   ...usePaletteSlice(set, get),
   ...useUserPreferencesSlice(set, get),

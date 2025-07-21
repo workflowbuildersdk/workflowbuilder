@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
-import { Input, Select, NavButton, Switch } from '@synergycodes/axiom';
+import { Input, Select, NavButton, SegmentPicker } from '@synergycodes/axiom';
 import { useMemo } from 'react';
 import { Icon } from '@workflow-builder/icons';
 import styles from './conditions-form-field.module.css';
@@ -46,7 +46,9 @@ export function ConditionsFormField(props: ConditionsFormFieldProps) {
           [styles['container-error']]: shouldShowValidation && (!condition.x || !condition.y),
         })}
       >
-        <NavButton onClick={() => {}} icon={<Icon name="DotsSixVertical" />} tooltip={t('tooltips.menu')} />
+        <NavButton onClick={() => {}} tooltip={t('tooltips.menu')}>
+          <Icon name="DotsSixVertical" />
+        </NavButton>
         <div className={styles['inputs-container']}>
           <Input
             className={styles['input']}
@@ -61,7 +63,7 @@ export function ConditionsFormField(props: ConditionsFormFieldProps) {
               label: t(`conditions.compare.${operator}`) as string,
               value: operator,
             }))}
-            onChange={(event, value) => handleChange('comparisonOperator', value)}
+            onChange={(_, value) => handleChange('comparisonOperator', value)}
             error={errors.comparisonOperator}
           />
           <Input
@@ -71,16 +73,21 @@ export function ConditionsFormField(props: ConditionsFormFieldProps) {
             error={errors.y}
           />
         </div>
-        <NavButton onClick={onRemove} icon={<Icon name="X" />} tooltip={t('tooltips.menu')} />
+        <NavButton onClick={onRemove} tooltip={t('tooltips.menu')}>
+          <Icon name="X" />
+        </NavButton>
       </div>
       {!isLast && (
-        <div className={styles['switch']}>
-          <span>and</span>
-          <Switch
-            checked={condition.logicalOperator === 'OR'}
-            onChange={(isChecked) => handleChange('logicalOperator', isChecked ? 'OR' : 'AND')}
-          />
-          <span>or</span>
+        <div className={styles['segment-picker-container']}>
+          <SegmentPicker
+            className={styles['segment-picker']}
+            size="xx-small"
+            value={condition.logicalOperator || 'AND'}
+            onChange={(_, value) => handleChange('logicalOperator', value)}
+          >
+            <SegmentPicker.Item value="AND">{t('conditions.compare.and')}</SegmentPicker.Item>
+            <SegmentPicker.Item value="OR">{t('conditions.compare.or')}</SegmentPicker.Item>
+          </SegmentPicker>
         </div>
       )}
     </>

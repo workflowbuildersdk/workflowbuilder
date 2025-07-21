@@ -1,7 +1,8 @@
 import { NodeDataProperties } from '@/features/json-form/types/default-properties';
-import { DecisionSchema } from './schema';
+import { DecisionNodeSchema } from './schema';
+import { statusOptions } from '../shared/general-information';
 
-export const defaultPropertiesData: NodeDataProperties<DecisionSchema> = {
-  label: 'node.decision.label',
-  description: 'node.decision.description',
+export const defaultPropertiesData: NodeDataProperties<DecisionNodeSchema> = {
+  status: statusOptions.active.value,
+  decisionBranches: [],
 };

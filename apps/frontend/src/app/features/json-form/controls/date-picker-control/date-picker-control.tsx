@@ -7,7 +7,7 @@ function DatePickerControl(props: DatePickerControlProps) {
   const { data, handleChange, path, enabled } = props;
 
   const onChange: DatePickerProps['onChange'] = (value) => {
-    handleChange(path, value);
+    handleChange(path, value?.toString());
   };
 
   return (

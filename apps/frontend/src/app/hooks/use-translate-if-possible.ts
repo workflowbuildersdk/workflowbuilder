@@ -7,7 +7,6 @@ export function useTranslateIfPossible() {
   const translateIfPossible = useCallback(
     (value = '') => {
       if (value && i18n.exists(value)) {
-        /* @ts-expect-error translation from variable */
         return t(value) as string;
       }
 

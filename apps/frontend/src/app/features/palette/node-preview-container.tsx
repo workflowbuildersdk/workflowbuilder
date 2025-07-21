@@ -4,10 +4,12 @@ import { WorkflowNodeTemplate } from '../diagram/nodes/workflow-node-template/wo
 import { PaletteItem } from '@workflow-builder/types/common';
 import { NodeType } from '@workflow-builder/types/node-types';
 import { AiAgentNodeTemplate } from '../diagram/nodes/ai-agent-node-template/ai-agent-node-template';
+import { DecisionNodeTemplate } from '../diagram/nodes/decision-node-template/decision-node-template';
 
 const NODE_TEMPLATES = {
   [NodeType.Node]: WorkflowNodeTemplate,
   [NodeType.AiNode]: AiAgentNodeTemplate,
+  [NodeType.DecisionNode]: DecisionNodeTemplate,
 } as const;
 
 type NodePreviewContainerProps = {

@@ -3,11 +3,11 @@ import { partition } from 'remeda';
 import { mapPositionToSide } from './map-position-to-side';
 import ELK, { ElkNode } from 'elkjs';
 import { getLabelFromEdge } from './get-label-from-edge';
-import { getHandleType } from '@/utils/handle-utils';
 import { LayoutDirection } from '@workflow-builder/types/common';
 import { WorkflowBuilderEdge, WorkflowBuilderNode } from '@workflow-builder/types/node-data';
 import { SNAP_GRID, SNAP_IS_ACTIVE } from '@/features/diagram/diagram.const';
 import { snapToGridIfNeeded } from '@/utils/position-utils';
+import { getHandleType } from '@/features/diagram/handles/get-handle-type';
 
 // elk layouting options can be found here:
 // https://www.eclipse.org/elk/reference/algorithms/org-eclipse-elk-layered.html

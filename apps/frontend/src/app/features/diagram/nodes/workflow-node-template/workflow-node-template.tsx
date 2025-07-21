@@ -1,29 +1,30 @@
 import { Handle } from '@xyflow/react';
-import { IconType } from '@workflow-builder/types/common';
-import { LayoutDirection } from '@workflow-builder/types/common';
-import {
-  getHandleSourceId,
-  getHandleSourcePosition,
-  getHandleTargetId,
-  getHandleTargetPosition,
-} from '../../../../utils/handle-utils';
+import { IconType, LayoutDirection } from '@workflow-builder/types/common';
 import { memo, useMemo } from 'react';
-import { NodeDescription, NodeIcon, NodePanel, Status } from '@synergycodes/axiom';
+import { Collapsible, NodeDescription, NodeIcon, NodePanel, Status } from '@synergycodes/axiom';
 import { Icon } from '@workflow-builder/icons';
+import { getHandleId } from '../../handles/get-handle-id';
+import { getHandlePosition } from '../../handles/get-handle-position';
 
-type Props = {
+import styles from './workflow-node-template.module.css';
+import { withOptionalPlugins } from '@/features/plugins/utils/adapter-components';
+import { NodeData } from '@workflow-builder/types/node-data';
+
+type WorkflowNodeTemplateProps = {
   id: string;
   icon: IconType;
   label: string;
   description: string;
+  data?: NodeData;
   selected?: boolean;
   layoutDirection?: LayoutDirection;
   isConnecting?: boolean;
   showHandles?: boolean;
   isValid?: boolean;
+  children?: React.ReactNode;
 };
 
-export const WorkflowNodeTemplate = memo(
+const WorkflowNodeTemplateComponent = memo(
   ({
     id,
     icon,
@@ -33,27 +34,40 @@ export const WorkflowNodeTemplate = memo(
     selected = false,
     showHandles = true,
     isValid,
-  }: Props) => {
-    const handleTargetId = getHandleTargetId(id);
-    const handleSourceId = getHandleSourceId(id);
+    children,
+  }: WorkflowNodeTemplateProps) => {
+    const handleTargetId = getHandleId({ nodeId: id, handleType: 'target' });
+    const handleSourceId = getHandleId({ nodeId: id, handleType: 'source' });
 
-    const handleTargetPosition = getHandleTargetPosition(layoutDirection);
-    const handleSourcePosition = getHandleSourcePosition(layoutDirection);
+    const handleTargetPosition = getHandlePosition({ direction: layoutDirection, handleType: 'target' });
+    const handleSourcePosition = getHandlePosition({ direction: layoutDirection, handleType: 'source' });
 
     const iconElement = useMemo(() => <Icon name={icon} size="large" />, [icon]);
 
+    const hasContent = !!children;
+
     return (
-      <NodePanel.Root selected={selected}>
-        <NodePanel.Header>
-          <Status status={isValid === false ? 'invalid' : undefined} />
-          <NodeIcon icon={iconElement} />
-          <NodeDescription label={label} description={description} />
-        </NodePanel.Header>
-        <NodePanel.Handles isVisible={showHandles}>
-          <Handle id={handleTargetId} position={handleTargetPosition} type="target" />
-          <Handle id={handleSourceId} position={handleSourcePosition} type="source" />
-        </NodePanel.Handles>
-      </NodePanel.Root>
+      <Collapsible>
+        <NodePanel.Root selected={selected} className={styles['content']}>
+          <NodePanel.Header>
+            <Status status={isValid === false ? 'invalid' : undefined} />
+            <NodeIcon icon={iconElement} />
+            <NodeDescription label={label} description={description} />
+            {hasContent && <Collapsible.Button />}
+          </NodePanel.Header>
+          <NodePanel.Content isVisible={hasContent}>
+            <Collapsible.Content>
+              <div className={styles['collapsible']}>{children}</div>
+            </Collapsible.Content>
+          </NodePanel.Content>
+          <NodePanel.Handles isVisible={showHandles} alignment={hasContent ? 'header' : 'center'}>
+            <Handle id={handleTargetId} position={handleTargetPosition} type="target" />
+            <Handle id={handleSourceId} position={handleSourcePosition} type="source" />
+          </NodePanel.Handles>
+        </NodePanel.Root>
+      </Collapsible>
     );
   },
 );
+
+export const WorkflowNodeTemplate = withOptionalPlugins(WorkflowNodeTemplateComponent, 'WorkflowNodeTemplate');

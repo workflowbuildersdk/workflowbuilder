@@ -6,8 +6,8 @@ import {
   LayoutDirection,
   WorkflowBuilderReactFlowInstance,
 } from '@workflow-builder/types/common';
-import { getAttachedHandle } from '@/utils/handle-utils';
 import { WorkflowBuilderNode, WorkflowBuilderEdge } from '@workflow-builder/types/node-data';
+import { getEdgeZIndex } from '@/features/diagram/edges/get-edge-z-index';
 
 export type DiagramState = {
   nodes: WorkflowBuilderNode[];
@@ -44,10 +44,7 @@ export function useDiagramSlice(set: SetDiagramState, get: GetDiagramState) {
         edges: addEdge(
           {
             ...connection,
-            sourceHandle: getAttachedHandle(connection.sourceHandle),
-            targetHandle: getAttachedHandle(connection.targetHandle),
-            //TODO: Temp solution
-            zIndex: connection.sourceHandle?.includes('tool') ? 1001 : undefined,
+            zIndex: getEdgeZIndex(connection),
             type: 'labelEdge',
           },
           get().edges,

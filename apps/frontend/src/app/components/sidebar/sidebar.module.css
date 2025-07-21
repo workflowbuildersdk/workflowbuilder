@@ -25,6 +25,11 @@
       padding: 0 var(--wb-sidebar-horizontal-padding);
     }
 
+    .header {
+      display: flex;
+      gap: 1rem;
+    }
+
     .content {
       flex: 1;
       overflow-y: auto;

@@ -1,19 +1,4 @@
 .header {
-  align-items: center;
-  position: relative;
-
-  div:has(span) {
-    width: 100%;
-  }
-
-  :global(.react-flow__handle-right) {
-    right: calc(-1 * var(--ax-public-node-padding));
-  }
-
-  :global(.react-flow__handle-left) {
-    left: calc(-1 * var(--ax-public-node-padding));
-  }
-
   .icon {
     background: linear-gradient(158deg, #5360f9 8.25%, #852bec 91.09%), #151516;
 
@@ -24,19 +9,20 @@
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
-  transition: height 0.15s ease-in-out;
-
-  & > div {
-    padding-top: 0.5rem;
-    gap: 0.5rem;
-    flex-direction: column;
-    display: flex;
-  }
 
   & svg {
     width: 18px;
     height: 18px;
+  }
+
+  .collapsible-content {
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .selected-model-icon {
@@ -46,7 +32,7 @@
   }
 
   .selected-memory-icon {
-    color: var(--wb-txt-primary-white);
+    color: var(--ax-txt-primary-white);
     background-color: var(--ax-button-gray-bg-default);
     outline: none;
   }

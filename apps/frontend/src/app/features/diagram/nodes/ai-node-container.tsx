@@ -33,7 +33,11 @@ export const AiNodeContainer = memo(({ id, data, selected }: Props) => {
   }, [memory, nodeDefinition]);
 
   return (
-    <NodeAsPortWrapper isConnecting={!!connectionBeingDragged} targetPortPosition={Position.Left}>
+    <NodeAsPortWrapper
+      isConnecting={!!connectionBeingDragged}
+      targetPortPosition={Position.Left}
+      offset={{ x: 0, y: 145 }}
+    >
       <AiAgentNodeTemplate
         id={id}
         selected={selected}

@@ -1,7 +1,7 @@
+import { getHandlePosition } from '@/features/diagram/handles/get-handle-position';
 import { LayoutDirection } from '@workflow-builder/types/common';
 import { Edge, Position } from '@xyflow/react';
 import { pipe, flatMap, uniqueBy, sortBy } from 'remeda';
-import { getHandleSourcePosition, getHandleTargetPosition } from '@/utils/handle-utils';
 
 type ElkPort = {
   id: string;
@@ -19,13 +19,13 @@ export function getPortsFromEdges(edges: Edge[], direction: LayoutDirection): El
         : [
             {
               id: `${source}-${sourceHandle}-source`,
-              position: getHandleSourcePosition(direction),
+              position: getHandlePosition({ direction, handleType: 'source' }),
               nodeId: source,
               handle: sourceHandle,
             },
             {
               id: `${target}-${targetHandle}-target`,
-              position: getHandleTargetPosition(direction),
+              position: getHandlePosition({ direction, handleType: 'target' }),
               nodeId: target,
               handle: targetHandle,
             },

@@ -28,10 +28,12 @@
   background-color: var(--wb-conditions-form-input-background);
 }
 
-.switch {
+.segment-picker-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
-  color: var(--ax-nav-button-icon-primary-default);
+
+  .segment-picker {
+    width: 150px;
+  }
 }

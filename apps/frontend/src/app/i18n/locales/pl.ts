@@ -1,3 +1,5 @@
+import { DefaultTranslationMap } from '../i18next';
+
 export const pl = {
   header: {
     folderName: 'Nazwa folderu',
@@ -24,7 +26,7 @@ export const pl = {
     },
     conditional: {
       label: 'Warunek',
-      description: 'Rozgałęźniaj przepływ pracy',
+      description: 'Rozgałęziaj przepływ pracy',
     },
     decision: {
       label: 'Decyzja',
@@ -106,4 +108,33 @@ export const pl = {
     aiConnectionError: 'Błąd połączenia z serwerem AI',
     wrongDiagramFormat: 'Nieprawidłowy format diagramu',
   },
-} as const;
+  decisionBranches: {
+    branch: 'Rozgałęzienie #{{index}}',
+    branches: 'Rozgałęzienia',
+    addBranch: 'Dodaj rozgałęzienie',
+    singleCondition: '1 warunek',
+    manyConditions: '{{count}} warunków',
+    noConditions: 'Brak warunków',
+  },
+  conditions: {
+    title: 'Edytor Warunków',
+    subtitle: 'Zdefiniuj Reguły Warunkowe',
+    cancel: 'Anuluj',
+    confirm: 'Potwierdź',
+    totalNumber: 'łącznie: {{count}} warunków',
+    totalNumber_one: 'łącznie: 1 warunek',
+    dependencies: 'Zależności',
+    compare: {
+      or: 'lub',
+      and: 'i',
+      isEqual: 'jest równe',
+      isNotEqual: 'nie jest równe',
+      isGreaterThan: 'jest większe',
+      isLessThan: 'jest mniejsze',
+      isLessThanOrEqual: 'jest mniejsze lub równe',
+      isGreaterThanOrEqual: 'jest większe lub równe',
+      isContaining: 'zawiera',
+      isNotContaining: 'nie zawiera',
+    },
+  },
+} as const satisfies DefaultTranslationMap;

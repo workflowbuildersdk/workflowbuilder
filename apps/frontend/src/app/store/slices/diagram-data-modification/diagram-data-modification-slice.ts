@@ -10,6 +10,7 @@ export type DiagramDataModificationState = {
   onNodesChange: OnNodesChange<WorkflowBuilderNode>;
   onEdgesChange: OnEdgesChange<WorkflowBuilderEdge>;
   setNodeProperties: (nodeId: string, properties: NodeData['properties']) => void;
+  setNodeData: <T extends WorkflowBuilderNode['data']>(nodeId: string, data: T) => void;
   setEdgeData: (edgeId: string, data: EdgeData) => void;
   pasteElements: (
     elements: { nodes?: WorkflowBuilderNode[]; edges?: WorkflowBuilderEdge[] },
@@ -36,6 +37,11 @@ export function useDiagramDataModificationSlice(
     setNodeProperties: (nodeId, properties) => {
       set({
         nodes: updateNodesProperties(get().nodes, nodeId, properties),
+      });
+    },
+    setNodeData: (nodeId, data) => {
+      set({
+        nodes: updateData(get().nodes, nodeId, data),
       });
     },
     setEdgeData: (edgeId, data) => {

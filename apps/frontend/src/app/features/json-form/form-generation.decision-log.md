@@ -1,4 +1,4 @@
-### Title: **Dynamic form generation for node properties**
+### Title: Dynamic form generation for node properties
 
 ### Proposed by: Jan Librowski
 

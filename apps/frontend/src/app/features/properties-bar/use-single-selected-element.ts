@@ -2,7 +2,7 @@ import useStore from '@/store/store';
 import { WorkflowBuilderNode, WorkflowBuilderEdge } from 'apps/types/src/node-data';
 import { WorkflowEditorState } from '@/store/store';
 
-type SingleSelectedElement = {
+export type SingleSelectedElement = {
   node: WorkflowBuilderNode | null;
   edge: WorkflowBuilderEdge | null;
 };
@@ -46,8 +46,8 @@ function areDataEqual(previous: SingleSelectedElement | null, next: SingleSelect
   }
 
   if (previous?.node && next?.node) {
-    const hasDifferentNodeProperties = !Object.is(previous.node.data.properties, next.node.data.properties);
-    if (hasDifferentNodeProperties) {
+    const hasDifferentNodeData = !Object.is(previous.node.data, next.node.data);
+    if (hasDifferentNodeData) {
       return false;
     }
   }

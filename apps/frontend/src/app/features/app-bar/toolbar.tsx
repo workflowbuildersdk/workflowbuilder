@@ -20,20 +20,18 @@ export function Toolbar({ onSave, onOpen, onUndo, onRedo, canUndo, canRedo, isRe
     <div className={styles['toolbar']}>
       <Logo className={styles['logo']} />
       <div className={styles['nav-segment']}>
-        <NavButton onClick={onSave} icon={<Icon name="FloppyDisk" />} tooltip={t('save')} />
-        <NavButton onClick={onOpen} icon={<Icon name="FolderOpen" />} tooltip={t('open')} />
-        <NavButton
-          onClick={onUndo}
-          icon={<Icon name="ArrowUUpLeft" />}
-          disabled={!canUndo || isReadOnlyMode}
-          tooltip={t('undo')}
-        />
-        <NavButton
-          onClick={onRedo}
-          icon={<Icon name="ArrowUUpRight" />}
-          disabled={!canRedo || isReadOnlyMode}
-          tooltip={t('redo')}
-        />
+        <NavButton onClick={onSave} tooltip={t('save')}>
+          <Icon name="FloppyDisk" />
+        </NavButton>
+        <NavButton onClick={onOpen} tooltip={t('open')}>
+          <Icon name="FolderOpen" />
+        </NavButton>
+        <NavButton onClick={onUndo} disabled={!canUndo || isReadOnlyMode} tooltip={t('undo')}>
+          <Icon name="ArrowUUpLeft" />
+        </NavButton>
+        <NavButton onClick={onRedo} disabled={!canRedo || isReadOnlyMode} tooltip={t('redo')}>
+          <Icon name="ArrowUUpRight" />
+        </NavButton>
       </div>
     </div>
   );

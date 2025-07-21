@@ -54,7 +54,9 @@ export function ProjectSelection({ documentName, onDuplicateClick, isReadOnlyMod
       )}
       <div className={styles['menu-container']}>
         <Menu items={items}>
-          <NavButton icon={<CaretDown />} tooltip={t('tooltips.pickTheProject')} />
+          <NavButton tooltip={t('tooltips.pickTheProject')}>
+            <CaretDown />
+          </NavButton>
         </Menu>
       </div>
     </div>

@@ -4,8 +4,8 @@ import { Draft, produce } from 'immer';
 import { addPoints } from '@/utils/points';
 import { transformPointFromWindowToDiagramCoordinates } from '@/utils/position-utils';
 import { Point } from '@workflow-builder/types/common';
-import { getHandleSourceId, getHandleTargetId } from '@/utils/handle-utils';
 import { WorkflowBuilderEdge, WorkflowBuilderNode } from '@workflow-builder/types/node-data';
+import { getHandleId } from '@/features/diagram/handles/get-handle-id';
 
 export function pasteElements(
   elements: { nodes?: WorkflowBuilderNode[]; edges?: WorkflowBuilderEdge[] },
@@ -40,8 +40,12 @@ export function pasteElements(
         ...edges.map(({ source, target, sourceHandle, targetHandle, ...edge }) => ({
           ...edge,
           selected: true,
-          sourceHandle: sourceHandle ? getHandleSourceId(mappedIds[source] || source) : null,
-          targetHandle: targetHandle ? getHandleTargetId(mappedIds[target] || target) : null,
+          sourceHandle: sourceHandle
+            ? getHandleId({ nodeId: mappedIds[source] || source, handleType: 'source' })
+            : null,
+          targetHandle: targetHandle
+            ? getHandleId({ nodeId: mappedIds[target] || target, handleType: 'target' })
+            : null,
           source: mappedIds[source] || source,
           target: mappedIds[target] || target,
           id: crypto.randomUUID(),

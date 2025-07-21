@@ -1,7 +1,7 @@
 import styles from './ai-tools-control.module.css';
 
 import { PlusCircle, SlidersHorizontal } from '@phosphor-icons/react';
-import { IconLabelButton } from '@synergycodes/axiom';
+import { Button } from '@synergycodes/axiom';
 import { createControlRenderer } from '../../utils/rendering';
 import { useContext, useCallback } from 'react';
 import { ModalContext } from '@/features/modals/modal-provider';
@@ -54,21 +54,31 @@ function AiToolsControl({ path, handleChange, data }: AiToolsControlProps) {
 
         return (
           <FormControlWithLabel key={index} label={`Tool #${++index}`}>
-            <IconLabelButton
-              variant="secondary"
-              className={styles['selected-tool-button']}
-              onClick={() => openEditorModal(toolData)}
-            >
-              {icon && <Icon name={icon} />}
-              {label}
-            </IconLabelButton>
+            {icon ? (
+              <Button
+                variant="secondary"
+                className={styles['selected-tool-button']}
+                onClick={() => openEditorModal(toolData)}
+              >
+                <Icon name={icon} />
+                {label}
+              </Button>
+            ) : (
+              <Button
+                variant="secondary"
+                className={styles['selected-tool-button']}
+                onClick={() => openEditorModal(toolData)}
+              >
+                {label}
+              </Button>
+            )}
           </FormControlWithLabel>
         );
       })}
-      <IconLabelButton variant="primary" onClick={(_) => openEditorModal()}>
+      <Button variant="primary" onClick={(_) => openEditorModal()}>
         <PlusCircle />
         Add Tool Slot
-      </IconLabelButton>
+      </Button>
     </>
   );
 }

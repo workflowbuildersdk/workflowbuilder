@@ -17,7 +17,7 @@ function DynamicConditionsControl(props: DynamicConditionsControlProps) {
   const { data = [], handleChange, path, enabled } = props;
   const formRef = useRef<ConditionsFormHandle>(null);
 
-  const { t } = useTranslation();
+  const { t } = useTranslation(undefined, { keyPrefix: 'conditions' });
 
   const dependencies = useMemo(() => {
     return conditionsToDependencies(data);
@@ -37,7 +37,7 @@ function DynamicConditionsControl(props: DynamicConditionsControlProps) {
   const openEditorModal = useCallback(() => {
     openModal({
       content: <ConditionsForm ref={formRef} onChange={onChange} value={data} />,
-      title: t('conditions.title'),
+      title: t('title'),
       footer: <ConditionModalFooter closeModal={closeModal} handleConfirm={handleConfirm} />,
     });
   }, [data, onChange, openModal, closeModal, formRef, handleConfirm, t]);
@@ -45,17 +45,14 @@ function DynamicConditionsControl(props: DynamicConditionsControlProps) {
   return (
     <div className={styles['container']}>
       <div className={styles['header']}>
-        <span className={clsx('ax-public-h10', styles['title'])}>Conditions</span>
-        <NavButton
-          size="small"
-          onClick={openEditorModal}
-          icon={<Icon name="FrameCorners" size="small" />}
-          tooltip={t('conditions.title')}
-        />
+        <span className={clsx('ax-public-h10', styles['title'])}>{t('title')}</span>
+        <NavButton size="small" onClick={openEditorModal} tooltip={t('title')}>
+          <Icon name="FrameCorners" size="small" />
+        </NavButton>
       </div>
-      <ControlWrapper {...props} uischema={{ ...props.uischema, label: 'Dependencies' }}>
+      <ControlWrapper {...props} uischema={{ ...props.uischema, label: t('dependencies') }}>
         <TextArea disabled={!enabled} value={dependencies.join(' ')} onClick={openEditorModal} size="medium" />
-        <span className={styles['tag']}>{t('conditions.totalNumber', { count: data.length })}</span>
+        <span className={styles['tag']}>{t('totalNumber', { count: data.length })}</span>
       </ControlWrapper>
     </div>
   );

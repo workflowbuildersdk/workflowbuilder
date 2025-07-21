@@ -16,10 +16,11 @@ export function PaletteHeader({ onClick, isSidebarExpanded }: PaletteHeaderProps
       <span className="ax-public-h7">{t('palette.nodesLibrary')}</span>
       <NavButton
         size="small"
-        icon={<Icon name="SidebarSimple" />}
         onClick={onClick}
         tooltip={isSidebarExpanded ? t('tooltips.closePalette') : t('tooltips.openPalette')}
-      />
+      >
+        <Icon name="SidebarSimple" />
+      </NavButton>
     </div>
   );
 }

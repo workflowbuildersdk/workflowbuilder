@@ -1,94 +1,77 @@
-# Evaluation License for Workflow Builder
+Copyright (C) 2025 Synergia Pro Sp. z o.o. 
 
-Copyright© 2025 Synergia Pro Sp. z o.o.
+Agreement: This Evaluation License for Workflow Builder.  
 
----
+License: A limited, non-commercial and preprimary license for Workflow Builder. 
 
-## Agreement
+Licensee: you - the individual or legal entity (including, without limitation, any corporation, partnership, or organization) that has lawfully obtained a copy of the Workflow Builder   
 
-This Evaluation License for Workflow Builder.
+Licensor/we: Synergia Pro Sp. z o.o. registered in Poland.  
 
-* **License**: A limited, non-commercial, and proprietary license to use the Workflow Builder.
-* **Licensee**: You - the individual or legal entity (including, without limitation, any corporation, partnership, or organization) that has lawfully obtained a copy of the Workflow Builder.
-* **Licensor/We**: Synergia Pro Sp. z o.o. registered in Poland.
+Workflow Builder:  is a frontend-first SDK that empowers developers to rapidly build, customize, and integrate visual workflow editors into any tech stack, offering a scalable and fully customizable foundation for creating complex, drag-and-drop workflow solutions. Within the SDK package there is code and accompanying documents, such as this Agreement. 
 
-**Workflow Builder**: is a front-end-first SDK that empowers developers to rapidly build, customize, and integrate visual workflow editors into any technology stack. It provides a scalable, fully customizable foundation for creating complex drag-and-drop workflow solutions. The SDK package contains code and accompanying documents, such as this Agreement.
+ 
 
----
+1. Evaluation License  - what is permitted 
 
-## Evaluation License – what is permitted
+ 
 
-We grant you, free of charge, a limited, non-exclusive, non-transferable, revocable, non-sublicensable license to:
+We grant you, free of charge, a limited, non-exclusive, non-transferable, revocable, non-sublicensable license to: 
 
-* download, install, access and use the Workflow Builder in your internal information technology infrastructure (whether leased or owned);
-* test and/or integrate the Workflow Builder with your systems or products, in various configurations, and architectures;
-* publish or disclose the results of an evaluation or benchmarking either internally or to third parties, unless the tests reveal the source code of the Workflow Builder;
-* modify the Workflow Builder but keep in mind that any such modifications, including those that may constitute derivative works under applicable law, will be subject to this License and cannot be used for any commercial purposes or in any production environments.
+download, install, access and use the Workflow Builder in your internal information technology infrastructure (whether leased or owned); 
 
-The License is granted solely for the purposes of internal evaluation if the Workflow Builder is suitable for your commercial or non-commercial use (incl. education). This License is granted strictly for non-commercial purposes and you cannot use Workflow Builder in any production environment.
+test and/or integrate Workflow Builder with your systems or products, in various configurations, and architectures; 
 
----
+modify the Workflow Builder (but keep in mind that any such modifications, including those that may constitute derivative works under applicable law, will be subject to this License and cannot be used for any commercial purpose or in any production environment). 
 
-## Restrictions – what is prohibited
+The License is granted solely for the purposes of internal evaluation if the Workflow Builder is suitable for your commercial or non-commercial use. This License is granted strictly for non-commercial purposes and you cannot use Workflow Builder in any production environment.  
 
-You may not use Workflow Builder in any way that goes beyond what this License allows. For example — and this list is not exhaustive — you must not:
+ 
 
-a) use the Workflow Builder for any commercial purpose, including in a production environment, deploy it to your clients, or offer competing services or products;
+2. Restrictions – what is prohibited 
 
-b) use the Workflow Builder to develop products or services that compete with Workflow Builder or our Workflow Builder-related services. This includes your own products or products made for your customers;
+ 
 
-c) copy, distribute, sell, lease, sublicense, or otherwise transfer the Workflow Builder;
+You may not use Workflow Builder in any way that goes beyond what this License allows. For example — and this list is not exhaustive — you must not: 
 
-d) remove, obscure, or alter any copyright, trademark, or other proprietary notices, labels, or marks contained in or on the Workflow Builder;
+(a) use the Workflow Builder  for any commercial purpose, including in production environment, deploy it to your clients, or offering competing services or products; 
 
-e) reverse engineer, decompile, translate, disassemble or otherwise attempt to modify the source code of the Workflow Builder outside of the scope of the License;
+(b) use the Workflow Builder to develop, test, or benchmark any product or deliver service that competes with Workflow Builder or our services related to the Workflow Builder – this includes your own products or products made for your customers; 
 
-f) create derivative works based on the Workflow Builder outside of the scope of the License.
+(c) copy, distribute, sell, lease, sublicense, or otherwise transfer the Workflow Builder, except as expressly permitted herein; 
 
----
+(d) remove, obscure, or alter any copyright, trademark, or other proprietary notices, labels, or marks contained in or on the Workflow Builder; 
 
-## Termination
+(e) reverse engineer, decompile, translate, disassemble or otherwise attempt to modify the source code of the Workflow Builder outside of the scope of the License;  
 
-We allow you to use Workflow Builder until the internal evaluation purpose is accomplished. Your license will terminate automatically if you breach any of the terms of this Agreement or CLA if applicable, or if you initiate a copyright, trade secret, or patent claim against us, any of our affiliates, or any user of the Workflow Builder (including modifications you have made). Upon expiration or termination of the License, you must stop using the Workflow Builder and destroy or return all copies in your possession, including any modifications.
+(f) create derivative works based on the Workflow Builder outside of the scope of the License; 
 
----
+(g) publish or disclose the results of testing or evaluation to third parties without our prior written consent. 
 
-## Contributor License Agreement (CLA)
+ 
 
-You are welcome to report bugs, suggest improvements, or contribute corrections to the SDK through a dedicated repository at https://github.com/workflowbuildersdk/workflowbuilder. While all contributions are voluntary and not compensated, we encourage you to join and support our community at: https://community.synergycodes.com/topic/6/workflow-builder.
+3. Termination 
 
-If you decide to contribute, please read the Contributor License Agreement (CLA) that is a part of this SDK.
+ 
 
----
+We allow you to use Workflow Builder until the internal evaluation purpose is accomplished. Your license to use the Workflow Builder will terminate automatically if you breach any terms of this License or initiate a copyright, trade secret, or patent claim against us, any of our affiliates, or any user of the Workflow Builder (including as modified by you). Upon expiration or termination, you must stop using the Workflow Builder and destroy or return all copies that you may possess, including any modifications. 
 
-## Disclaimer and limitation of liability
+ 
 
-**THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.**
-EXCEPT AS PROHIBITED BY THE APPLICABLE LAWS, IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE WORKFLOW BUILDER OR THE USE OR OTHER DEALINGS IN THE WORKFLOW BUILDER.
+4. Disclaimer and limitation of liability 
 
----
+ 
 
-## Final provisions
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE WORKFLOW BUILDER OR THE USE OR OTHER DEALINGS IN THE WORKFLOW BUILDER. 
 
-If you do not accept the License conditions, you must not use the Workflow Builder and immediately remove it from your systems.
+ 
 
-This license is governed by Polish law, and the parties consent to the exclusive jurisdiction of the courts in Wrocław, Poland.
+5. Final provisions 
 
-If you need a commercial license for the Workflow Builder, please contact our Sales Representative.
+ 
 
----
+- If you do not accept the License conditions, you must not use the Workflow Builder and immediately remove it from your systems. 
 
-## Summary of the license permissions
+- This License is governed by the laws of Delaware, and the parties consent to exclusive jurisdiction in Delaware courts.  
 
-| Clause                                       | Restriction/Permission                                       |
-| -------------------------------------------- | ------------------------------------------------------------ |
-| **Commercial use**                           | ❌ Prohibited                                                 |
-| **Testing & Integration**                    | ✅ Permitted, internal use only                               |
-| **Modifications**                            | ✅ Permitted, but within the limited scope of the License     |
-| **Benchmarking and text result publication** | ✅ Permitted, unless it contains Workflow Builder source code |
-| **Competing services**                       | ❌ Prohibited                                                 |
-| **Trademark removal**                        | ❌ Prohibited                                                 |
-| **Copying/distribution**                     | ❌ Prohibited                                                 |
-| **Time limit**                               | Until internal evaluation process is completed               |
-
-
+- If you need a commercial license to Workflow Builder, please contact our Sales Representative.  

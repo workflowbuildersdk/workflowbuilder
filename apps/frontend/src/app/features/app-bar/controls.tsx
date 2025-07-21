@@ -102,7 +102,9 @@ export function Controls({
 
       <div className={styles['menu-container']}>
         <ControlsMenu items={items}>
-          <NavButton icon={<DotsThreeVertical />} tooltip={t('tooltips.menu')} />
+          <NavButton tooltip={t('tooltips.menu')}>
+            <DotsThreeVertical />
+          </NavButton>
         </ControlsMenu>
       </div>
     </div>

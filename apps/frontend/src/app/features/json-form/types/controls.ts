@@ -49,6 +49,11 @@ export type DynamicCondition = {
   logicalOperator: LogicalOperator;
 };
 
+export type DecisionBranch = {
+  index: number;
+  conditions: DynamicCondition[];
+};
+
 export type DynamicConditionsControlElement = Override<
   BaseControlElement,
   {
@@ -57,6 +62,15 @@ export type DynamicConditionsControlElement = Override<
 >;
 
 export type DynamicConditionsControlProps = ControlProps<DynamicCondition[], DynamicConditionsControlElement>;
+
+export type DecisionBranchesControlElement = Override<
+  BaseControlElement,
+  {
+    type: 'DecisionBranches';
+  }
+>;
+
+export type DecisionBranchesControlProps = ControlProps<DecisionBranch[], DecisionBranchesControlElement>;
 
 export type SelectControlElement = Override<
   BaseControlElement,

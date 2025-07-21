@@ -1,8 +1,8 @@
-### Title: **Internationalization implementation with i18next**
+### Title: Internationalization implementation with i18next
 
 ### Proposed by: Tomasz Rybak
 
-### Date: 15.04.2024
+### Date: 15.04.2025
 
 ## Context
 

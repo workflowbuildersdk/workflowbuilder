@@ -50,14 +50,7 @@ You'll need `node` and `pnpm` with proper versions set in the root `package.json
 
 ## <a name="decision-logs">Decision Logs</a>
 
-To document technical choices and provide an overview of reasoning behind them, the repo contains `*.decision-log.md` files that live along the code and packages their related to. See individual decision logs for more details:
-
-- [Using Web Components for Framework-Agnostic Integration](./apps/frontend/src/web-component-wrapper.decision-log.md)
-- [Dynamic form generation for properties sidebar](./apps/frontend/src/app/features/json-form/form-generation.decision-log.md)
-- [Lazy loaded SVG icon mechanism 04-03-2025](./apps/icons/lazy-loaded-icons-04-03-2025.decision-log.md)
-- [Lazy loaded SVG icon mechanism 08-04-2025](./apps/icons/lazy-loaded-icons-08-04-2025.decision-log.md)
-- [Translation system](./apps/frontend/src/app/i18n/i18next.decision-log.md)
-- [Selection State Management](./apps/frontend/src/app/features/properties-bar/selection.decison-log.md)
+To document technical choices and provide an overview of reasoning behind them, the repo contains `*.decision-log.md` files that live along the code and packages their related to. See [decision logs list](./DECISION-LOGS.md)
 
 ## <a name="links">Links</a>
 

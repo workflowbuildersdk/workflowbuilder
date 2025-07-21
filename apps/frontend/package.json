@@ -18,7 +18,7 @@
     "@jsonforms/react": "^3.4.1",
     "@mui/base": "^5.0.0-beta.62",
     "@phosphor-icons/react": "^2.1.7",
-    "@synergycodes/axiom": "^1.0.0-beta.9",
+    "@synergycodes/axiom": "^1.0.0-beta.19",
     "@workflow-builder/icons": "workspace:*",
     "@xyflow/react": "catalog:",
     "clsx": "^2.1.1",
@@ -36,7 +36,7 @@
     "zustand": "^5.0.1"
   },
   "devDependencies": {
-    "@types/react": "^19.1.0",
+    "@types/react": "catalog:",
     "@vitejs/plugin-react": "^4.3.4",
     "@workflow-builder/types": "workspace:*",
     "eslint-plugin-react": "7.37.2",

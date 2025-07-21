@@ -1,5 +1,6 @@
 import 'i18next';
-import { defaultNS, resources } from '.';
+import { defaultNS } from '.';
+import { en } from './locales/en';
 
 type PluginResources = {
   readonly translation: {
@@ -11,9 +12,9 @@ type PluginResources = {
   };
 };
 
-type EnglishResources = (typeof resources)['en'];
-
-type Resources = EnglishResources & PluginResources;
+type EnglishTranslationMap = typeof en;
+type DefaultResources = { translation: EnglishTranslationMap };
+type Resources = DefaultResources & PluginResources;
 
 declare module 'i18next' {
   interface CustomTypeOptions {
@@ -25,3 +26,12 @@ declare module 'i18next' {
     strictKeyChecks: true;
   }
 }
+
+export type DefaultTranslationMap = DeepReplace<EnglishTranslationMap, string>;
+type DeepReplace<T, LeafValue> = T extends object
+  ? T extends readonly unknown[] | null
+    ? LeafValue
+    : {
+        [K in keyof T]: DeepReplace<T[K], LeafValue>;
+      }
+  : LeafValue;

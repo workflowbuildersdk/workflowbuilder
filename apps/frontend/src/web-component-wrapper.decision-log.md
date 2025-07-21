@@ -1,4 +1,4 @@
-### Title: **Using Web Components for Framework-Agnostic Integration**  
+### Title: Using Web Components for Framework-Agnostic Integration
 
 ### Proposed by: Piotr Błaszczyk 
 
@@ -154,4 +154,4 @@ Web Components provides the best balance between independence, ease of integrati
   - Future integrations may require additional work at the time of implementation.  
 
 ## Status  
-Accepted  
+Accepted

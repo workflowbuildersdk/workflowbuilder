@@ -16,6 +16,7 @@ import { datePickerControlRenderer } from './controls/date-picker-control/date-p
 import { textAreaControlRenderer } from './controls/text-area-control/text-area-control';
 import { dynamicConditionsControlRenderer } from './controls/dynamic-conditions-control/dynamic-conditions-control';
 import { aiToolsControlRenderer } from './controls/ai-tools-control/ai-tools-control';
+import { decisionBranchesControlRenderer } from './controls/decision-branches-control/decision-branches-control';
 
 type Props = Pick<ComponentProps<typeof JsonForms>, 'onChange' | 'data' | 'uischema' | 'schema'> & {
   readonly?: boolean;
@@ -44,4 +45,5 @@ const renderers: JsonFormsRendererRegistryEntry[] = [
   textAreaControlRenderer,
   dynamicConditionsControlRenderer,
   aiToolsControlRenderer,
+  decisionBranchesControlRenderer,
 ];

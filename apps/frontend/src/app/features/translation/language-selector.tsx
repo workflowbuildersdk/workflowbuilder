@@ -31,7 +31,9 @@ export function LanguageSelector() {
     <>
       <span className={styles['title']}>{currentLanguage.label}</span>
       <Menu items={languageItems} size="small">
-        <NavButton icon={<CaretDown />} tooltip={t('tooltips.changeLanguage')} />
+        <NavButton tooltip={t('tooltips.changeLanguage')}>
+          <CaretDown />
+        </NavButton>
       </Menu>
     </>
   );

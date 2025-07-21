@@ -1,4 +1,4 @@
-import { PaletteItem } from '@workflow-builder/types/common';
+import type { UISchema } from '@/features/json-form/types/uischema';
 
 export const statusOptions = {
   active: { label: 'Active', value: 'active', icon: 'StatusActive' },
@@ -6,7 +6,7 @@ export const statusOptions = {
   disabled: { label: 'Disabled', value: 'disabled', icon: 'StatusDisabled' },
 } as const;
 
-export const generalInformation: PaletteItem['uischema'] = {
+export const generalInformation: UISchema = {
   type: 'Accordion',
   label: 'General Information',
   rule: {

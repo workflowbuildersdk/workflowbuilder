@@ -8,10 +8,7 @@ const diagram: DiagramModel = {
       {
         id: 'e3f5b487-35ca-4cc5-9e46-77b56a62e737',
         type: 'node',
-        position: {
-          x: 12,
-          y: 137,
-        },
+        position: { x: 18, y: 144 },
         data: {
           segments: [],
           properties: {
@@ -23,18 +20,12 @@ const diagram: DiagramModel = {
           icon: 'Lightning',
         },
         selected: false,
-        measured: {
-          width: 259,
-          height: 55,
-        },
+        measured: { width: 258, height: 64 },
       },
       {
         id: '8ca95405-7bb6-496d-90ae-850b3ee88dc1',
         type: 'node',
-        position: {
-          x: 382,
-          y: 137,
-        },
+        position: { x: 378, y: 144 },
         data: {
           segments: [],
           properties: {
@@ -47,18 +38,12 @@ const diagram: DiagramModel = {
           icon: 'ListChecks',
         },
         selected: false,
-        measured: {
-          width: 259,
-          height: 55,
-        },
+        measured: { width: 258, height: 64 },
       },
       {
         id: '3817f8c6-eba8-485d-9476-cf944f64a373',
         type: 'node',
-        position: {
-          x: 815,
-          y: 12,
-        },
+        position: { x: 810, y: 18 },
         data: {
           segments: [],
           properties: {
@@ -71,18 +56,12 @@ const diagram: DiagramModel = {
           icon: 'PlayCircle',
         },
         selected: false,
-        measured: {
-          width: 259,
-          height: 55,
-        },
+        measured: { width: 258, height: 64 },
       },
       {
         id: 'aebc5083-5773-492d-bb49-1e928f56e331',
         type: 'node',
-        position: {
-          x: 815,
-          y: 262,
-        },
+        position: { x: 810, y: 270 },
         data: {
           segments: [],
           properties: {
@@ -95,19 +74,13 @@ const diagram: DiagramModel = {
           icon: 'PlayCircle',
         },
         selected: false,
-        measured: {
-          width: 259,
-          height: 55,
-        },
+        measured: { width: 258, height: 64 },
         dragging: false,
       },
       {
         id: 'd6adcc9c-3146-46fd-9b0f-af78e94ad04d',
         type: 'node',
-        position: {
-          x: 1185,
-          y: 12,
-        },
+        position: { x: 1188, y: 18 },
         data: {
           segments: [],
           properties: {
@@ -124,18 +97,12 @@ const diagram: DiagramModel = {
           icon: 'Timer',
         },
         selected: false,
-        measured: {
-          width: 259,
-          height: 55,
-        },
+        measured: { width: 258, height: 64 },
       },
       {
         id: '60ed7855-3c3a-42ca-a770-8240a3a8ee12',
         type: 'node',
-        position: {
-          x: 1185,
-          y: 262,
-        },
+        position: { x: 1188, y: 270 },
         data: {
           segments: [],
           properties: {
@@ -152,18 +119,12 @@ const diagram: DiagramModel = {
           icon: 'Timer',
         },
         selected: false,
-        measured: {
-          width: 259,
-          height: 55,
-        },
+        measured: { width: 258, height: 64 },
       },
       {
         id: '77a46d81-8b23-43a0-8c37-1e29335b67a0',
         type: 'node',
-        position: {
-          x: 1555,
-          y: 137,
-        },
+        position: { x: 1566, y: 144 },
         data: {
           segments: [],
           properties: {
@@ -176,19 +137,13 @@ const diagram: DiagramModel = {
           icon: 'ListChecks',
         },
         selected: false,
-        measured: {
-          width: 259,
-          height: 55,
-        },
+        measured: { width: 258, height: 64 },
         dragging: false,
       },
       {
         id: 'da28f8fe-c3a0-44c0-8213-c7c88d62164e',
         type: 'node',
-        position: {
-          x: 1964,
-          y: 12,
-        },
+        position: { x: 1962, y: 18 },
         data: {
           segments: [],
           properties: {
@@ -201,18 +156,12 @@ const diagram: DiagramModel = {
           icon: 'PlayCircle',
         },
         selected: false,
-        measured: {
-          width: 259,
-          height: 55,
-        },
+        measured: { width: 258, height: 64 },
       },
       {
         id: '455a0738-c1cc-4856-992a-07654eb29182',
         type: 'node',
-        position: {
-          x: 1964,
-          y: 262,
-        },
+        position: { x: 1962, y: 270 },
         data: {
           segments: [],
           properties: {
@@ -225,18 +174,12 @@ const diagram: DiagramModel = {
           icon: 'PlayCircle',
         },
         selected: false,
-        measured: {
-          width: 259,
-          height: 55,
-        },
+        measured: { width: 258, height: 64 },
       },
       {
         id: 'd27658ca-925d-450d-9ddd-737a5f0aeeb4',
         type: 'node',
-        position: {
-          x: 2704,
-          y: 137,
-        },
+        position: { x: 2700, y: 144 },
         data: {
           segments: [],
           properties: {
@@ -249,19 +192,13 @@ const diagram: DiagramModel = {
           icon: 'PlayCircle',
         },
         selected: false,
-        measured: {
-          width: 259,
-          height: 55,
-        },
+        measured: { width: 258, height: 64 },
         dragging: false,
       },
       {
         id: 'f1a5e5cb-58fa-4379-a45e-437553153b5f',
         type: 'node',
-        position: {
-          x: 2334,
-          y: 239,
-        },
+        position: { x: 2340, y: 270 },
         data: {
           segments: [],
           properties: {
@@ -278,139 +215,129 @@ const diagram: DiagramModel = {
           icon: 'Timer',
         },
         selected: false,
-        measured: {
-          width: 259,
-          height: 55,
-        },
+        measured: { width: 258, height: 64 },
+        dragging: false,
       },
     ],
     edges: [
       {
         source: 'e3f5b487-35ca-4cc5-9e46-77b56a62e737',
-        sourceHandle: 'e3f5b487-35ca-4cc5-9e46-77b56a62e737-source',
+        sourceHandle: 'e3f5b487-35ca-4cc5-9e46-77b56a62e737:source',
         target: '8ca95405-7bb6-496d-90ae-850b3ee88dc1',
-        targetHandle: '8ca95405-7bb6-496d-90ae-850b3ee88dc1-target',
+        targetHandle: '8ca95405-7bb6-496d-90ae-850b3ee88dc1:target',
+        zIndex: 0,
         type: 'labelEdge',
-        id: 'xy-edge__e3f5b487-35ca-4cc5-9e46-77b56a62e737e3f5b487-35ca-4cc5-9e46-77b56a62e737-source-8ca95405-7bb6-496d-90ae-850b3ee88dc18ca95405-7bb6-496d-90ae-850b3ee88dc1-target',
-        selected: false,
+        id: 'xy-edge__e3f5b487-35ca-4cc5-9e46-77b56a62e737e3f5b487-35ca-4cc5-9e46-77b56a62e737:source-8ca95405-7bb6-496d-90ae-850b3ee88dc18ca95405-7bb6-496d-90ae-850b3ee88dc1:target',
       },
       {
         source: '8ca95405-7bb6-496d-90ae-850b3ee88dc1',
-        sourceHandle: '8ca95405-7bb6-496d-90ae-850b3ee88dc1-source',
+        sourceHandle: '8ca95405-7bb6-496d-90ae-850b3ee88dc1:source',
         target: '3817f8c6-eba8-485d-9476-cf944f64a373',
-        targetHandle: '3817f8c6-eba8-485d-9476-cf944f64a373-target',
+        targetHandle: '3817f8c6-eba8-485d-9476-cf944f64a373:target',
+        zIndex: 0,
         type: 'labelEdge',
-        id: 'xy-edge__8ca95405-7bb6-496d-90ae-850b3ee88dc18ca95405-7bb6-496d-90ae-850b3ee88dc1-source-3817f8c6-eba8-485d-9476-cf944f64a3733817f8c6-eba8-485d-9476-cf944f64a373-target',
+        id: 'xy-edge__8ca95405-7bb6-496d-90ae-850b3ee88dc18ca95405-7bb6-496d-90ae-850b3ee88dc1:source-3817f8c6-eba8-485d-9476-cf944f64a3733817f8c6-eba8-485d-9476-cf944f64a373:target',
         selected: false,
-        data: {
-          label: '> $30K',
-        },
+        data: { label: '> 30$K' },
       },
       {
         source: '8ca95405-7bb6-496d-90ae-850b3ee88dc1',
-        sourceHandle: '8ca95405-7bb6-496d-90ae-850b3ee88dc1-source',
+        sourceHandle: '8ca95405-7bb6-496d-90ae-850b3ee88dc1:source',
         target: 'aebc5083-5773-492d-bb49-1e928f56e331',
-        targetHandle: 'aebc5083-5773-492d-bb49-1e928f56e331-target',
+        targetHandle: 'aebc5083-5773-492d-bb49-1e928f56e331:target',
+        zIndex: 0,
         type: 'labelEdge',
-        id: 'xy-edge__8ca95405-7bb6-496d-90ae-850b3ee88dc18ca95405-7bb6-496d-90ae-850b3ee88dc1-source-aebc5083-5773-492d-bb49-1e928f56e331aebc5083-5773-492d-bb49-1e928f56e331-target',
+        id: 'xy-edge__8ca95405-7bb6-496d-90ae-850b3ee88dc18ca95405-7bb6-496d-90ae-850b3ee88dc1:source-aebc5083-5773-492d-bb49-1e928f56e331aebc5083-5773-492d-bb49-1e928f56e331:target',
         selected: false,
-        data: {
-          label: '< $30K',
-        },
-      },
-      {
-        source: '3817f8c6-eba8-485d-9476-cf944f64a373',
-        sourceHandle: '3817f8c6-eba8-485d-9476-cf944f64a373-source',
-        target: 'd6adcc9c-3146-46fd-9b0f-af78e94ad04d',
-        targetHandle: 'd6adcc9c-3146-46fd-9b0f-af78e94ad04d-target',
-        type: 'labelEdge',
-        id: 'xy-edge__3817f8c6-eba8-485d-9476-cf944f64a3733817f8c6-eba8-485d-9476-cf944f64a373-source-d6adcc9c-3146-46fd-9b0f-af78e94ad04dd6adcc9c-3146-46fd-9b0f-af78e94ad04d-target',
-        selected: false,
+        data: { label: '< 30$K' },
       },
       {
         source: 'aebc5083-5773-492d-bb49-1e928f56e331',
-        sourceHandle: 'aebc5083-5773-492d-bb49-1e928f56e331-source',
+        sourceHandle: 'aebc5083-5773-492d-bb49-1e928f56e331:source',
         target: '60ed7855-3c3a-42ca-a770-8240a3a8ee12',
-        targetHandle: '60ed7855-3c3a-42ca-a770-8240a3a8ee12-target',
+        targetHandle: '60ed7855-3c3a-42ca-a770-8240a3a8ee12:target',
+        zIndex: 0,
         type: 'labelEdge',
-        id: 'xy-edge__aebc5083-5773-492d-bb49-1e928f56e331aebc5083-5773-492d-bb49-1e928f56e331-source-60ed7855-3c3a-42ca-a770-8240a3a8ee1260ed7855-3c3a-42ca-a770-8240a3a8ee12-target',
-        selected: false,
+        id: 'xy-edge__aebc5083-5773-492d-bb49-1e928f56e331aebc5083-5773-492d-bb49-1e928f56e331:source-60ed7855-3c3a-42ca-a770-8240a3a8ee1260ed7855-3c3a-42ca-a770-8240a3a8ee12:target',
+      },
+      {
+        source: '3817f8c6-eba8-485d-9476-cf944f64a373',
+        sourceHandle: '3817f8c6-eba8-485d-9476-cf944f64a373:source',
+        target: 'd6adcc9c-3146-46fd-9b0f-af78e94ad04d',
+        targetHandle: 'd6adcc9c-3146-46fd-9b0f-af78e94ad04d:target',
+        zIndex: 0,
+        type: 'labelEdge',
+        id: 'xy-edge__3817f8c6-eba8-485d-9476-cf944f64a3733817f8c6-eba8-485d-9476-cf944f64a373:source-d6adcc9c-3146-46fd-9b0f-af78e94ad04dd6adcc9c-3146-46fd-9b0f-af78e94ad04d:target',
       },
       {
         source: 'd6adcc9c-3146-46fd-9b0f-af78e94ad04d',
-        sourceHandle: 'd6adcc9c-3146-46fd-9b0f-af78e94ad04d-source',
+        sourceHandle: 'd6adcc9c-3146-46fd-9b0f-af78e94ad04d:source',
         target: '77a46d81-8b23-43a0-8c37-1e29335b67a0',
-        targetHandle: '77a46d81-8b23-43a0-8c37-1e29335b67a0-target',
+        targetHandle: '77a46d81-8b23-43a0-8c37-1e29335b67a0:target',
+        zIndex: 0,
         type: 'labelEdge',
-        id: 'xy-edge__d6adcc9c-3146-46fd-9b0f-af78e94ad04dd6adcc9c-3146-46fd-9b0f-af78e94ad04d-source-77a46d81-8b23-43a0-8c37-1e29335b67a077a46d81-8b23-43a0-8c37-1e29335b67a0-target',
-        selected: false,
+        id: 'xy-edge__d6adcc9c-3146-46fd-9b0f-af78e94ad04dd6adcc9c-3146-46fd-9b0f-af78e94ad04d:source-77a46d81-8b23-43a0-8c37-1e29335b67a077a46d81-8b23-43a0-8c37-1e29335b67a0:target',
       },
       {
         source: '60ed7855-3c3a-42ca-a770-8240a3a8ee12',
-        sourceHandle: '60ed7855-3c3a-42ca-a770-8240a3a8ee12-source',
+        sourceHandle: '60ed7855-3c3a-42ca-a770-8240a3a8ee12:source',
         target: '77a46d81-8b23-43a0-8c37-1e29335b67a0',
-        targetHandle: '77a46d81-8b23-43a0-8c37-1e29335b67a0-target',
+        targetHandle: '77a46d81-8b23-43a0-8c37-1e29335b67a0:target',
+        zIndex: 0,
         type: 'labelEdge',
-        id: 'xy-edge__60ed7855-3c3a-42ca-a770-8240a3a8ee1260ed7855-3c3a-42ca-a770-8240a3a8ee12-source-77a46d81-8b23-43a0-8c37-1e29335b67a077a46d81-8b23-43a0-8c37-1e29335b67a0-target',
-        selected: false,
+        id: 'xy-edge__60ed7855-3c3a-42ca-a770-8240a3a8ee1260ed7855-3c3a-42ca-a770-8240a3a8ee12:source-77a46d81-8b23-43a0-8c37-1e29335b67a077a46d81-8b23-43a0-8c37-1e29335b67a0:target',
       },
       {
         source: '77a46d81-8b23-43a0-8c37-1e29335b67a0',
-        sourceHandle: '77a46d81-8b23-43a0-8c37-1e29335b67a0-source',
+        sourceHandle: '77a46d81-8b23-43a0-8c37-1e29335b67a0:source',
         target: 'da28f8fe-c3a0-44c0-8213-c7c88d62164e',
-        targetHandle: 'da28f8fe-c3a0-44c0-8213-c7c88d62164e-target',
+        targetHandle: 'da28f8fe-c3a0-44c0-8213-c7c88d62164e:target',
+        zIndex: 0,
         type: 'labelEdge',
-        id: 'xy-edge__77a46d81-8b23-43a0-8c37-1e29335b67a077a46d81-8b23-43a0-8c37-1e29335b67a0-source-da28f8fe-c3a0-44c0-8213-c7c88d62164eda28f8fe-c3a0-44c0-8213-c7c88d62164e-target',
+        id: 'xy-edge__77a46d81-8b23-43a0-8c37-1e29335b67a077a46d81-8b23-43a0-8c37-1e29335b67a0:source-da28f8fe-c3a0-44c0-8213-c7c88d62164eda28f8fe-c3a0-44c0-8213-c7c88d62164e:target',
         selected: false,
-        data: {
-          label: '✔️',
-        },
+        data: { label: '✔️' },
       },
       {
         source: '77a46d81-8b23-43a0-8c37-1e29335b67a0',
-        sourceHandle: '77a46d81-8b23-43a0-8c37-1e29335b67a0-source',
+        sourceHandle: '77a46d81-8b23-43a0-8c37-1e29335b67a0:source',
         target: '455a0738-c1cc-4856-992a-07654eb29182',
-        targetHandle: '455a0738-c1cc-4856-992a-07654eb29182-target',
+        targetHandle: '455a0738-c1cc-4856-992a-07654eb29182:target',
+        zIndex: 0,
         type: 'labelEdge',
-        id: 'xy-edge__77a46d81-8b23-43a0-8c37-1e29335b67a077a46d81-8b23-43a0-8c37-1e29335b67a0-source-455a0738-c1cc-4856-992a-07654eb29182455a0738-c1cc-4856-992a-07654eb29182-target',
+        id: 'xy-edge__77a46d81-8b23-43a0-8c37-1e29335b67a077a46d81-8b23-43a0-8c37-1e29335b67a0:source-455a0738-c1cc-4856-992a-07654eb29182455a0738-c1cc-4856-992a-07654eb29182:target',
         selected: false,
-        data: {
-          label: '✖️',
-        },
+        data: { label: '✖️' },
       },
       {
         source: '455a0738-c1cc-4856-992a-07654eb29182',
-        sourceHandle: '455a0738-c1cc-4856-992a-07654eb29182-source',
+        sourceHandle: '455a0738-c1cc-4856-992a-07654eb29182:source',
         target: 'f1a5e5cb-58fa-4379-a45e-437553153b5f',
-        targetHandle: 'f1a5e5cb-58fa-4379-a45e-437553153b5f-target',
+        targetHandle: 'f1a5e5cb-58fa-4379-a45e-437553153b5f:target',
+        zIndex: 0,
         type: 'labelEdge',
-        id: 'xy-edge__455a0738-c1cc-4856-992a-07654eb29182455a0738-c1cc-4856-992a-07654eb29182-source-f1a5e5cb-58fa-4379-a45e-437553153b5ff1a5e5cb-58fa-4379-a45e-437553153b5f-target',
-        selected: false,
+        id: 'xy-edge__455a0738-c1cc-4856-992a-07654eb29182455a0738-c1cc-4856-992a-07654eb29182:source-f1a5e5cb-58fa-4379-a45e-437553153b5ff1a5e5cb-58fa-4379-a45e-437553153b5f:target',
       },
       {
         source: 'da28f8fe-c3a0-44c0-8213-c7c88d62164e',
-        sourceHandle: 'da28f8fe-c3a0-44c0-8213-c7c88d62164e-source',
+        sourceHandle: 'da28f8fe-c3a0-44c0-8213-c7c88d62164e:source',
         target: 'd27658ca-925d-450d-9ddd-737a5f0aeeb4',
-        targetHandle: 'd27658ca-925d-450d-9ddd-737a5f0aeeb4-target',
+        targetHandle: 'd27658ca-925d-450d-9ddd-737a5f0aeeb4:target',
+        zIndex: 0,
         type: 'labelEdge',
-        id: 'xy-edge__da28f8fe-c3a0-44c0-8213-c7c88d62164eda28f8fe-c3a0-44c0-8213-c7c88d62164e-source-d27658ca-925d-450d-9ddd-737a5f0aeeb4d27658ca-925d-450d-9ddd-737a5f0aeeb4-target',
-        selected: false,
+        id: 'xy-edge__da28f8fe-c3a0-44c0-8213-c7c88d62164eda28f8fe-c3a0-44c0-8213-c7c88d62164e:source-d27658ca-925d-450d-9ddd-737a5f0aeeb4d27658ca-925d-450d-9ddd-737a5f0aeeb4:target',
       },
       {
         source: 'f1a5e5cb-58fa-4379-a45e-437553153b5f',
-        sourceHandle: 'f1a5e5cb-58fa-4379-a45e-437553153b5f-source',
+        sourceHandle: 'f1a5e5cb-58fa-4379-a45e-437553153b5f:source',
         target: 'd27658ca-925d-450d-9ddd-737a5f0aeeb4',
-        targetHandle: 'd27658ca-925d-450d-9ddd-737a5f0aeeb4-target',
+        targetHandle: 'd27658ca-925d-450d-9ddd-737a5f0aeeb4:target',
+        zIndex: 0,
         type: 'labelEdge',
-        id: 'xy-edge__f1a5e5cb-58fa-4379-a45e-437553153b5ff1a5e5cb-58fa-4379-a45e-437553153b5f-source-d27658ca-925d-450d-9ddd-737a5f0aeeb4d27658ca-925d-450d-9ddd-737a5f0aeeb4-target',
-        selected: false,
+        id: 'xy-edge__f1a5e5cb-58fa-4379-a45e-437553153b5ff1a5e5cb-58fa-4379-a45e-437553153b5f:source-d27658ca-925d-450d-9ddd-737a5f0aeeb4d27658ca-925d-450d-9ddd-737a5f0aeeb4:target',
       },
     ],
-    viewport: {
-      x: 254.742_290_748_898_77,
-      y: 432.779_735_682_819_36,
-      zoom: 0.396_475_770_925_110_1,
-    },
+    viewport: { x: 501.282_596_416_268_46, y: 542.569_959_932_364_3, zoom: 0.415_725_621_804_375_44 },
   },
 };
 

@@ -1,15 +1,15 @@
 import styles from './sales-contact.module.css';
-import imageUrl from '@/assets/ruslana.jpeg';
+import imageUrl from '@/assets/maciej.jpg';
 import { Avatar, Button } from '@synergycodes/axiom';
 import clsx from 'clsx';
 import { LinkedinLogo, PaperPlaneRight } from '@phosphor-icons/react';
 
 const salesDetails = {
-  name: 'Ruslana Brykaliuk',
+  name: 'Maciej Teska',
   imageUrl,
-  position: 'Sales Development Representative',
-  email: 'ruslana.brykaliuk@synergycodes.com',
-  linkedInUrl: 'https://www.linkedin.com/in/ruslana-b-970016135/',
+  position: 'CEO',
+  email: 'maciej.teska@workflowbuilder.io',
+  linkedInUrl: 'https://linkedin.com/in/maciej-teska',
 };
 
 export function SalesContact() {

@@ -70,7 +70,7 @@ export const pl = {
   noAccess: {
     header: 'Otrzymaj pełny dostęp do produktu',
     title: 'Skontaktuj się, aby dowiedzieć się więcej',
-    subtitle: 'Połącz się z nami, aby uzyskać szczegółowe informacje o pełnym dostępie.',
+    subtitle: 'Uzyskaj szczegółowe informacje o pełnym dostępie.',
   },
   templateSelector: {
     title: 'Wybierz szablon',

@@ -27,6 +27,7 @@ import { TemporaryEdge } from './edges/temporary-edge/temporary-edge';
 import { useDeleteConfirmation } from '@/features/modals/delete-confirmation/use-delete-confirmation';
 import { WorkflowBuilderOnSelectionChangeParams } from '@workflow-builder/types/common';
 import { WorkflowBuilderEdge, WorkflowBuilderNode } from '@workflow-builder/types/node-data';
+import { Watermark } from '../watermark/watermark';
 
 function DiagramContainerComponent({ edgeTypes = {} }: { edgeTypes?: EdgeTypes }) {
   const {
@@ -176,6 +177,7 @@ function DiagramContainerComponent({ edgeTypes = {} }: { edgeTypes?: EdgeTypes }
         selectionMode={SelectionMode.Partial}
       >
         <Background />
+        <Watermark />
       </ReactFlow>
     </div>
   );
